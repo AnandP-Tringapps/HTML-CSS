@@ -57,23 +57,23 @@ function insertNewRecord(data) {
     var table = document.getElementById("regdetails").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
     var cell1 = newRow.insertCell(0);
-    var cell1.innerHTML = data.fullName;
+    cell1.innerHTML = data.fullName;
     var cell2 = newRow.insertCell(1);
-    var cell2.innerHTML = data.Phonenumber;
+    cell2.innerHTML = data.Phonenumber;
     var cell3 = newRow.insertCell(2);
-    var cell3.innerHTML = data.email;
+    cell3.innerHTML = data.email;
     var cell4 = newRow.insertCell(3);
-    var cell4.innerHTML = data.country;
+    cell4.innerHTML = data.country;
     var cell5 = newRow.insertCell(4);
-    var cell5.innerHTML = data.city;
+    cell5.innerHTML = data.city;
     var cell6 = newRow.insertCell(5);
-    var cell6.innerHTML = data.pincode;
+    cell6.innerHTML = data.pincode;
     var cell7 = newRow.insertCell(6);
-    var cell7.innerHTML = data.gender;
+    cell7.innerHTML = data.gender;
     var cell8 = newRow.insertCell(7);
-    var cell8.innerHTML = data.hobbies;
+    cell8.innerHTML = data.hobbies;
     var cell9 = newRow.insertCell(8);
-    var cell9.innerHTML = `<a onClick="onEdit(this)">Edit</a>
+    cell9.innerHTML = `<a onClick="onEdit(this)">Edit</a>
                        <a onClick="onDelete(this)">Delete</a>`;
     
 }
