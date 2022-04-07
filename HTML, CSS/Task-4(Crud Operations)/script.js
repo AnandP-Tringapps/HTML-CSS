@@ -56,24 +56,24 @@ function readFormData() {
 function insertNewRecord(data) {
     var table = document.getElementById("regdetails").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
-    cell1 = newRow.insertCell(0);
-    cell1.innerHTML = data.fullName;
-    cell2 = newRow.insertCell(1);
-    cell2.innerHTML = data.Phonenumber;
-    cell3 = newRow.insertCell(2);
-    cell3.innerHTML = data.email;
-    cell4 = newRow.insertCell(3);
-    cell4.innerHTML = data.country;
-    cell5 = newRow.insertCell(4);
-    cell5.innerHTML = data.city;
-    cell6 = newRow.insertCell(5);
-    cell6.innerHTML = data.pincode;
-    cell7 = newRow.insertCell(6);
-    cell7.innerHTML = data.gender;
-    cell8 = newRow.insertCell(7);
-    cell8.innerHTML = data.hobbies;
-    cell9 = newRow.insertCell(8);
-    cell9.innerHTML = `<a onClick="onEdit(this)">Edit</a>
+    var cell1 = newRow.insertCell(0);
+    var cell1.innerHTML = data.fullName;
+    var cell2 = newRow.insertCell(1);
+    var cell2.innerHTML = data.Phonenumber;
+    var cell3 = newRow.insertCell(2);
+    var cell3.innerHTML = data.email;
+    var cell4 = newRow.insertCell(3);
+    var cell4.innerHTML = data.country;
+    var cell5 = newRow.insertCell(4);
+    var cell5.innerHTML = data.city;
+    var cell6 = newRow.insertCell(5);
+    var cell6.innerHTML = data.pincode;
+    var cell7 = newRow.insertCell(6);
+    var cell7.innerHTML = data.gender;
+    var cell8 = newRow.insertCell(7);
+    var cell8.innerHTML = data.hobbies;
+    var cell9 = newRow.insertCell(8);
+    var cell9.innerHTML = `<a onClick="onEdit(this)">Edit</a>
                        <a onClick="onDelete(this)">Delete</a>`;
     
 }
