@@ -1,5 +1,6 @@
 
 var selectedRow = null
+var isValid;
 
 function onFormSubmit() {
     if (validate()) {
@@ -115,7 +116,7 @@ function updateRecord(formData) {
 
 function onDelete(td) {
     if (confirm('Are you sure to delete this record ?')) {
-        row = td.parentElement.parentElement;
+        var row = td.parentElement.parentElement;
         document.getElementById("regdetails").deleteRow(row.rowIndex);
         resetForm();
     }
